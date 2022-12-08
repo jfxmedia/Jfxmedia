@@ -1,31 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: green;
-    padding: 40px 20px;
-    align-items: center;
-    position: fixed;
-    width: 100%;
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 80px;
 }
-
-.menu-items {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-.menu-items .item {
-    color: white;
-    padding: 2px 20px;
+p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 32px;
 }
 
 .logo {
-    padding: 2px 10px;
+    color: black;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    background-color: white;
+    border-radius: 5%;
+    width: 80px;
+    height: 40px;
+}
+
+.navigation {
+    width: 100%;
+    z-index: 50;
+    background-color: rgb(23, 96, 253);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px;
+    transition: 0.5s;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+}
+.menu-items .item {
+    color: white;
+    padding: 2px 20px;
+    text-decoration: none;    
+
+}
+
+.main-hero {
+    background: rgb(16,89,182);
+    background: linear-gradient(45deg, rgba(16,89,182,1) 0%, rgba(0,212,255,1) 100%);
+    height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 20px 40px;
+    color: white;
+    position: relative;
+    top: 50%;
+    max-width: 50%;
+}
+
+.quote-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
+
+.quote-block {
+    background-color: white;
+    max-width: 33vw;
+    min-height: 250px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: -30px 20px 0px 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.150);
+}
+
+@media (max-width: 768px) {
+    .quote-wrapper {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px 20px;
+    }
+    .quote-block {
+        background-color: white;
+        max-width: 90vw;
+        padding: 20px 20px;
+        margin: -30px 20px 50px 20px;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+}
+
+.contact-wrapper {
+    width: 100%;
+    height: auto;
+    background: rgb(132, 38, 141);
 }

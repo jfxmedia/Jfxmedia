@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "sass": "^1.56.1"
+    "@fontsource/poppins": "^4.5.10"
   }
 }
